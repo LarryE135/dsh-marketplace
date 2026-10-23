@@ -1,7 +1,7 @@
 {
   "schema": "https://raw.githubusercontent.com/dsh-marketplace/registry/main/schema/plugin.schema.json",
-  "generatedAt": "2026-08-15T06:44:44.646Z",
-  "count": 7,
+  "generatedAt": "2026-10-23T02:52:32.291Z",
+  "count": 8,
   "plugins": [
     {
       "id": "deepseek-harness-for-codex",
@@ -41,6 +41,47 @@
       ],
       "repository": "https://github.com/Seann0824/deepseek-harness-for-codex",
       "docs": "https://github.com/Seann0824/deepseek-harness-for-codex/blob/main/README.md"
+    },
+    {
+      "id": "dsh-flash-presets",
+      "name": "DSH Flash 精简预设",
+      "version": "0.2.2",
+      "description": "Three DSH agent presets tuned for token efficiency on flash-tier routes: PTC tool surface plus hard behavior rules, tunable compaction threshold and round budget. v3 (lean-v3) is the current default.",
+      "descriptionZh": "面向 flash 级路由的 token 效率优化 agent 预设（v1/v2/v3）：PTC 工具面 + 硬约束，压缩阈值与轮数预算可调；以 dsh.bundle 组合包形式一键安装。v3（lean-v3）为现行主版本。",
+      "author": {
+        "name": "LarryE135",
+        "url": "https://github.com/LarryE135"
+      },
+      "license": "MIT",
+      "category": "workflow",
+      "tags": [
+        "preset",
+        "agent-preset",
+        "token-efficiency",
+        "flash",
+        "ptc",
+        "compaction",
+        "lean"
+      ],
+      "compatibility": {
+        "dsh": ">=0.1.7-rc.1",
+        "platforms": [
+          "linux",
+          "macos",
+          "windows"
+        ]
+      },
+      "install": {
+        "target": "npm",
+        "spec": "dsh-flash-presets",
+        "command": "dsh plugin --profile {profile} add dsh-flash-presets"
+      },
+      "verified": false,
+      "maintainers": [
+        "LarryE135"
+      ],
+      "repository": "https://github.com/LarryE135/dsh-flash-presets",
+      "docs": "https://github.com/LarryE135/dsh-flash-presets#readme"
     },
     {
       "id": "dsh-mcp-client",
